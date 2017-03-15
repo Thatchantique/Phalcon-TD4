@@ -1,5 +1,7 @@
 {
   "require": {
-    "phpmv/php-mv-ui": "dev-master"
+    "phpmv/php-mv-ui": "dev-master",
+    "phalcon/devtools": "dev-master"
   }
+
 }

@@ -6,5 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Phalcon\\' => array($vendorDir . '/phalcon/devtools/scripts/Phalcon'),
     'Ajax\\' => array($vendorDir . '/phpmv/php-mv-ui/Ajax'),
 );

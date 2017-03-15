@@ -68,6 +68,24 @@ class TestController extends \Phalcon\Mvc\Controller
         $this->jquery->compile($this->view);
     }
 
+    public function postFormAction(){
+        $formUser = $this->semantic->htmlForm("frm");
+        $formUser->addInput("nom","Nom")->setName("nom");
+        $formUser->addInput("email","Email")->setName("email");
+        $formUser->addSubmit("btValider", "Valider");
+        $formUser->submitOnClick("btValider", "test/postReponse", "#divReponse");
+
+        echo $formUser->compile($this->jquery);
+        echo $this->jquery->compile($this->view);
+        echo "<div id='divReponse'></div>";
+    }
+
+    public function postReponseAction()
+    {
+        $this->view->disable();
+        echo "nom : ".$_POST['nom']."</br>"."email : ".$_POST['email']."<br/>";
+    }
+
 
 }
 

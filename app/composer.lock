@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "236bbb296dfb1b472d161fe8b40d7fe9",
+    "content-hash": "d07ec1ea2e41c47de75a567f7bed6669",
     "packages": [
         {
             "name": "frameworks/jquery",
@@ -30,17 +30,73 @@
             "time": "2015-10-09T00:55:51+00:00"
         },
         {
+            "name": "phalcon/devtools",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phalcon/phalcon-devtools.git",
+                "reference": "5e9e1ccaaa858325ef15286171d16439d7c58aa7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phalcon/phalcon-devtools/zipball/5e9e1ccaaa858325ef15286171d16439d7c58aa7",
+                "reference": "5e9e1ccaaa858325ef15286171d16439d7c58aa7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-phalcon": "^3.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "kherge/box": "^2.7"
+            },
+            "bin": [
+                "phalcon.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Phalcon\\": "scripts/Phalcon/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Phalcon Team",
+                    "email": "team@phalconphp.com",
+                    "homepage": "https://phalconphp.com/en/team"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/phalcon/phalcon-devtools/graphs/contributors"
+                }
+            ],
+            "description": "This tools provide you useful scripts to generate code helping to develop faster and easy applications that use with Phalcon framework.",
+            "homepage": "https://phalconphp.com",
+            "keywords": [
+                "Devtools",
+                "framework",
+                "phalcon",
+                "phar",
+                "webtools"
+            ],
+            "time": "2017-02-24 22:26:58"
+        },
+        {
             "name": "phpmv/php-mv-ui",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpMv/phpMv-UI.git",
-                "reference": "9e80e50f74d64362f50fc8f3b2861c65f0736b07"
+                "reference": "fcfed56bcba246e8a5ca854ba97a8f46ceb5d66b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpMv/phpMv-UI/zipball/9e80e50f74d64362f50fc8f3b2861c65f0736b07",
-                "reference": "9e80e50f74d64362f50fc8f3b2861c65f0736b07",
+                "url": "https://api.github.com/repos/phpMv/phpMv-UI/zipball/fcfed56bcba246e8a5ca854ba97a8f46ceb5d66b",
+                "reference": "fcfed56bcba246e8a5ca854ba97a8f46ceb5d66b",
                 "shasum": ""
             },
             "require": {
@@ -83,14 +139,15 @@
                 "twitter bootstrap",
                 "yii"
             ],
-            "time": "2017-02-28 09:58:20"
+            "time": "2017-03-14 23:35:50"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "phpmv/php-mv-ui": 20
+        "phpmv/php-mv-ui": 20,
+        "phalcon/devtools": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

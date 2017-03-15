@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInit63acf74aa3e13850af95d720a694e8ac
 {
     public static $prefixLengthsPsr4 = array (
+        'P' => 
+        array (
+            'Phalcon\\' => 8,
+        ),
         'A' => 
         array (
             'Ajax\\' => 5,
@@ -14,6 +18,10 @@ class ComposerStaticInit63acf74aa3e13850af95d720a694e8ac
     );
 
     public static $prefixDirsPsr4 = array (
+        'Phalcon\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phalcon/devtools/scripts/Phalcon',
+        ),
         'Ajax\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmv/php-mv-ui/Ajax',
